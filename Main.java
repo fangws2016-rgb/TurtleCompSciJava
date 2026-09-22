@@ -1,12 +1,12 @@
 import java.awt.*;
 
 public class Main {
-  public static void main(String[] args) {  
+  public static void main(String[] args) {
     World world = new World(400,400);
-    
+
     // Below is one turtle object, already built for you.
-    // Turtle is a class.  yertle is an object reference variable.  It references a Turtle object in memory.  
-    // the object itself doesn't have a text name.  It is located at a particular address in memory.  
+    // Turtle is a class.  yertle is an object reference variable.  It references a Turtle object in memory.
+    // the object itself doesn't have a text name.  It is located at a particular address in memory.
     // We say that the object refrence variable yertle references the object (though sometimes informally
     // we refer to the object itself as yertle)  More that one object reference variable can reference the same object.
     Turtle yertle = new Turtle(world);
@@ -14,10 +14,27 @@ public class Main {
     // Two example method calls.
     yertle.forward(100);
     yertle.turnRight();
+    yertle.setBodyColor(Color.BLACK);
+    yertle.forward(50);
+    yertle.turnLeft();
+    yertle.forward(50);
+    yertle.turnRight();
+    yertle.forward(50);
+    yertle.turnRight();
+    yertle.forward(50);
+    yertle.setShellColor(Color.GREEN);
 
     // TODO 1: build a SECOND turtle with its own name.
     //         It needs its own  new  line. Copying the variable is not enough.
-
+    Turtle bob = new Turtle(world);
+    bob.setBodyColor(Color.YELLOW);
+    bob.backward(50);
+    bob.turnLeft();
+    bob.forward(50);
+    bob.turnRight();
+    bob.forward(50);
+    bob.turnRight();
+    bob.forward(50);
 
     // TODO 2: give your turtles different colours.
     //         Look up how in the documentation - it is not shown here.
@@ -32,10 +49,13 @@ public class Main {
     //         Write their names in the comment below so you remember them:
     //
     //         Methods I found in the docs:  ......................
+                //setShellColor
+                //setBodyColor
+                //setPenColor
 
 
     // TODO 5: then keep going. Make something worth looking at.
-    
+
     world.setVisible(true);
   }
 }
