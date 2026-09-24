@@ -10,10 +10,48 @@ public class Main {
     // We say that the object refrence variable yertle references the object (though sometimes informally
     // we refer to the object itself as yertle)  More that one object reference variable can reference the same object.
     Turtle yertle = new Turtle(world);
+      // Two example method calls.
+      yertle.forward(100);
+      yertle.turnRight();
+      yertle.setBodyColor(Color.BLACK);
+      yertle.forward(50);
+      yertle.turnLeft();
+      yertle.forward(50);
+      yertle.turnRight();
+      yertle.forward(50);
+      yertle.turnRight();
+      yertle.forward(50);
+      yertle.setShellColor(Color.GREEN);
 
-    // Two example method calls.
-    yertle.forward(100);
-    yertle.turnRight();
+      // TODO 1: build a SECOND turtle with its own name.
+      //         It needs its own  new  line. Copying the variable is not enough.
+      Turtle bob = new Turtle(world);
+      bob.setBodyColor(Color.YELLOW);
+      bob.setPenColor(Color.RED);
+      for (int i = 1; i<50; i++) {
+          bob.turnLeft();
+          bob.forward(1);
+          bob.turnLeft();
+          bob.forward(100);
+          bob.turnRight();
+          bob.forward(1);
+          bob.turnRight();
+          bob.forward(100);
+      }
+      Turtle jim = new Turtle(world);
+      jim.setBodyColor(Color.GREEN);
+      jim.turnLeft();
+      for (int i = 1; i<27; i++) {
+
+          jim.forward(100);
+          jim.turnLeft();
+          jim.forward(2);
+          jim.turnLeft();
+          jim.forward(100);
+          jim.turnRight();
+          jim.forward(2);
+          jim.turnRight();
+      }
 
     // TODO 1: build a SECOND turtle with its own name.
     //         It needs its own  new  line. Copying the variable is not enough.
