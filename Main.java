@@ -14,45 +14,10 @@ public class Main {
     // Two example method calls.
     yertle.forward(100);
     yertle.turnRight();
-    yertle.setBodyColor(Color.BLACK);
-    yertle.forward(50);
-    yertle.turnLeft();
-    yertle.forward(50);
-    yertle.turnRight();
-    yertle.forward(50);
-    yertle.turnRight();
-    yertle.forward(50);
-    yertle.setShellColor(Color.GREEN);
 
     // TODO 1: build a SECOND turtle with its own name.
     //         It needs its own  new  line. Copying the variable is not enough.
-    Turtle bob = new Turtle(world);
-    bob.setBodyColor(Color.YELLOW);
-    bob.setPenColor(Color.RED);
-    for (int i = 1; i<50; i++) {
-        bob.turnLeft();
-        bob.forward(1);
-        bob.turnLeft();
-        bob.forward(100);
-        bob.turnRight();
-        bob.forward(1);
-        bob.turnRight();
-        bob.forward(100);
-    }
-    Turtle jim = new Turtle(world);
-    jim.setBodyColor(Color.GREEN);
-    jim.turnLeft();
-  for (int i = 1; i<27; i++) {
 
-      jim.forward(100);
-      jim.turnLeft();
-      jim.forward(2);
-      jim.turnLeft();
-      jim.forward(100);
-      jim.turnRight();
-      jim.forward(2);
-      jim.turnRight();
-  }
 
     // TODO 2: give your turtles different colours.
     //         Look up how in the documentation - it is not shown here.
@@ -67,9 +32,6 @@ public class Main {
     //         Write their names in the comment below so you remember them:
     //
     //         Methods I found in the docs:  ......................
-                //setShellColor
-                //setBodyColor
-                //setPenColor
 
 
     // TODO 5: then keep going. Make something worth looking at.
