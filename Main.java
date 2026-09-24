@@ -70,6 +70,7 @@ public class Main {
     //         Write their names in the comment below so you remember them:
     //
     //         Methods I found in the docs:  ......................
+     // .setBodyColor .setPenColo
 
 
     // TODO 5: then keep going. Make something worth looking at.
